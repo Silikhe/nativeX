@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* START: General styles */
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+/* END: General styles */
+
+/* START: Hero styles */
+.hero {
+  background-image: url('/images/bg_hero.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  @apply 2xl:text-[72px] sm:text-[84px] text-[50px] font-extrabold text-white;
+}
+
+.hero__subtitle {
+  @apply text-[27px] text-black font-light mt-5;
+}
+
+.hero__image-container {
+  /* @apply xl:flex-[1] flex justify-end items-end w-full xl:h-screen; */
+}
+
+.hero__image {
+  @apply relative xl:w-full w-[50%] xl:h-full h-[540px] z-0;
+}
+
+/* .hero__image-overlay {
+  @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
+} */
+/* END: Hero styles */
+
+
+.bg-primary-dark {
+  background-color: #16c1bb; /* Slightly darker shade for hover effect */
+}
+
+
+.contact_hero {
+  background-image: url('/images/contact_bg.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+}
+
+.hero-dev {
+  background: #130D3A;
+  height: 100%;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.review_hero {
+  background-image: url('/images/contact_bg.png'); /* Ensure this path is correct */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
